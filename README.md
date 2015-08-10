@@ -6,5 +6,7 @@
 
   After installing, run webpack-dev-server from cloned root
 
+  Your app will be hosted at http://localhost:8080/dest/demo_app.html
+
 ## Resources
 - http://fancypixel.github.io/blog/2015/01/29/react-plus-flux-backed-by-rails-api-part-2/
