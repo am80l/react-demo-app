@@ -28,4 +28,6 @@ Example consuming an external API and flowing the data through to views. Actions
 ![Flux Diagram](https://github.com/am80l/react-demo-app/blob/master/images/widget-diagram.png)
 
 ## Resources
+- https://facebook.github.io/flux/docs/overview.html#content
+- http://facebook.github.io/react/
 - http://fancypixel.github.io/blog/2015/01/29/react-plus-flux-backed-by-rails-api-part-2/
