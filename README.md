@@ -38,7 +38,7 @@ Example consuming an external API and flowing the data through to views. Actions
 - Multiple widgets strategy
   * Solved by React’s component based architecture. Components talk to each other      via stores built on Flux
 - Class naming conventions
-  * Solved with &- naming convention https://github.intuit.com/TTcom/product-compare-chart/blob/master/src/less/pcc.less
+  * Solved in React via js interpolation. Solved in LESS/SASS with &- naming convention https://github.intuit.com/TTcom/product-compare-chart/blob/master/src/less/pcc.less
 - Better development with watch (only build new files)
   * Solved with web pack watch, and optionally hot reload
 - Minified AND compressed production files
