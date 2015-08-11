@@ -1,12 +1,17 @@
 # React Demo App
 
-  This is a sandbox for React components built with Flux.
+This is a sandbox for React components built with Flux.
 
-  Required global packages: webpack, webpack-dev-server
+Required global packages:
+`npm i webpack -g;`
+`npm i webpack-dev-server -g;`
+  
+Install local packages at cloned root:
+`npm i`
 
-  After installing, run webpack-dev-server from cloned root
+After installing, run webpack-dev-server from cloned root
 
-  Your app will be hosted at http://localhost:8080/dest/demo_app.html
+Your app will be hosted at http://localhost:8080/dest/demo_app.html
 
 ## Components
 
