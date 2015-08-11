@@ -20,7 +20,7 @@ Vote Panel (parent component)
   - Vote Count (child component)
 
 ## Flux architecture
-Components use the Flux pattern for unidirectional data flow. Data flows from stores down to views. Views interact with stores via actions which trigger store methods via the dispatcher. 
+Components use the Flux pattern for unidirectional data flow. Data flows from stores down to views. Views can only update stores via actions which pass a payload to store methods via the dispatcher. 
 ![Flux Diagram](https://github.com/am80l/react-demo-app/blob/master/images/flux-diagram.png)
 
 ## Widget architecture
