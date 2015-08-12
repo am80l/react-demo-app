@@ -29,6 +29,11 @@ Actions triggered in the views fetch new data via AJAX and flow the response pay
 Example consuming an external API and flowing response payload through to views:
 ![Flux Diagram](https://github.com/am80l/react-demo-app/blob/master/images/widget-diagram.png)
 
+## Deployment
+Widgets will have dedicated CI pulling from Github using Jenkins and should be deployable independent from the API/Application (LC) they consume. This will decouple widgets from the App so that they are not bound to LC's release cycle. Jenkins will always pull latest from Github Master and will kick off npm and webpack processes to compile and package our widgets for production. 
+
+![Deploy Diagram](https://github.com/am80l/react-demo-app/blob/master/images/deployment-diagram.jpeg)
+
 #### Need to solve
 - Separate the widget build from LC main application
   * Via independent build strategy. Requires a dedicated build / deploy cycle. More info: Nolan P
@@ -49,7 +54,7 @@ Example consuming an external API and flowing response payload through to views:
 - ReactJS
   * Yes
 - API v2 of LC
-  * TODO during execution
+  * TODO part of execution
 - Implementation design
   * TBD Web components vs Script injection or both? TBD with BU implementation teams
 - Manual versioning
