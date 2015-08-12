@@ -40,8 +40,9 @@ Example consuming an external API and flowing the data through to views. Actions
 - Class naming conventions
   * Solved in React via js interpolation. Solved in LESS/SASS with &- naming convention https://github.intuit.com/TTcom/product-compare-chart/blob/master/src/less/pcc.less
 - Better development with watch (only build new files)
-  * Solved with web pack watch, and optionally hot reload
+  * Solved with web pack watch, and optionally w/ hot reload
 - Minified AND compressed production files
+  * AWS limitation  
   * TODO, parallel
 - ReactJS
   * Yes
@@ -62,9 +63,9 @@ Example consuming an external API and flowing the data through to views. Actions
 - Monitoring for SDK endpoint uptime
   * TODO, parallel
 - Unit testing
-  * Karma w/mocha and chai. TODO why jest?
+  * Karma w/mocha and chai. TBD whats so great about jest?
 - Regression testing
- * Unit testing + QE automation TBD
+  * Unit testing + QE automation TBD
 
 ## Resources
 - https://facebook.github.io/flux/docs/overview.html#content
