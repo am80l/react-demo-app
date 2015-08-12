@@ -46,7 +46,7 @@ Example consuming an external API and flowing the data through to views. Actions
 - ReactJS
   * Yes
 - API v2 of LC
-  *TODO during execution
+  * TODO during execution
 - Implementation design
   * TBD Web components vs Script injection or both? TBD with BU implementation teams
 - Manual versioning
@@ -54,13 +54,13 @@ Example consuming an external API and flowing the data through to views. Actions
 - Documentation for versions
   * Release notes for each version, potentially enforceable https://www.npmjs.com/package/grunt-release-notes
 - sdk-latest
-  *TODO, parallel
+  * TODO, parallel
 - sdk-versioned
   *TODO, parallel
 - Semantic versioning
   * github tags or via gulp-bump, gulp release, etc
 - Monitoring for SDK endpoint uptime
-  *TODO, parallel
+  * TODO, parallel
 - Unit testing
   * Karma w/mocha and chai. TODO why jest?
 - Regression testing
