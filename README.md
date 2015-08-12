@@ -35,8 +35,8 @@ Example consuming an external API and flowing the data through to views. Actions
   * TODO env for docs and release notes, automatable 
 - Localization
   * Via Yahoo react-intl using format.js http://formatjs.io/react/
-- Multiple widgets strategy
-  * Solved by React’s component based architecture. Components talk to each other      via stores built on Flux
+- SDK distribution design/Multiple widgets strategy
+  * Solved by React’s component based design. Components talk to each other via stores built on Flux architecture
 - Class naming conventions
   * Solved in React via js interpolation. Solved in LESS/SASS with &- naming convention https://github.intuit.com/TTcom/product-compare-chart/blob/master/src/less/pcc.less
 - Better development with watch (only build new files)
@@ -49,7 +49,6 @@ Example consuming an external API and flowing the data through to views. Actions
   *TODO during execution
 - Implementation design
   * TBD Web components vs Script injection or both? TBD with BU implementation teams
-- SDK distribution design (multiple widgets)
 - Manual versioning
   * github tags or via gulp-bump, gulp release, etc
 - Documentation for versions
@@ -65,7 +64,7 @@ Example consuming an external API and flowing the data through to views. Actions
 - Unit testing
   * Karma w/mocha and chai. TODO why jest?
 - Regression testing
-     * Unit testing + QE automation TBD
+ * Unit testing + QE automation TBD
 
 ## Resources
 - https://facebook.github.io/flux/docs/overview.html#content
