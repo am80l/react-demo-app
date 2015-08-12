@@ -42,7 +42,7 @@ Example consuming an external API and flowing the data through to views. Actions
 - Better development with watch (only build new files)
   * Solved with web pack watch, and optionally hot reload
 - Minified AND compressed production files
-  *TODO, parallel
+  * TODO, parallel
 - ReactJS
   * Yes
 - API v2 of LC
