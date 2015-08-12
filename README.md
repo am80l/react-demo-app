@@ -26,7 +26,7 @@ Components use the Flux pattern for unidirectional data flow. Data flows from st
 ## Widget architecture
 Actions triggered in the views fetch new data via AJAX and flow the response payload through the dispatcher to the store. New data flows from the store down to the React component and state changes trigger the components render method. Each store is responsible for a domain of the application, and only update themselves in response to actions.
 
-Example consuming an external API and flowing response payload through to views. 
+Example consuming an external API and flowing response payload through to views:
 ![Flux Diagram](https://github.com/am80l/react-demo-app/blob/master/images/widget-diagram.png)
 
 #### Need to solve
