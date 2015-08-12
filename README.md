@@ -35,6 +35,7 @@ Widgets will have dedicated CI pulling from Github using Jenkins and should be d
 ![Deploy Diagram](https://github.com/am80l/react-demo-app/blob/master/images/deployment-diagram.jpeg)
 
 #### Need to solve
+These were identified as issues we would like to improve on. Below are the issues and their potential solutions if applicable.
 - Separate the widget build from LC main application
   * Via independent build strategy. Requires a dedicated build / deploy cycle. More info: Nolan P
 - Documentation
