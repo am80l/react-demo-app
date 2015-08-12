@@ -59,11 +59,11 @@ Example consuming an external API and flowing response payload through to views.
 - sdk-latest
   * TODO, parallel
 - sdk-versioned
-  *TODO, parallel
+  * TBD, parallel
 - Semantic versioning
   * github tags or via gulp-bump, gulp release, etc
 - Monitoring for SDK endpoint uptime
-  * TODO, parallel
+  * TBD, parallel
 - Unit testing
   * Karma w/mocha and chai. TBD whats so great about jest?
 - Regression testing
