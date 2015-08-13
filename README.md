@@ -78,4 +78,5 @@ These were identified as issues we would like to improve on. Below are the issue
 ## Resources
 - https://facebook.github.io/flux/docs/overview.html#content
 - http://facebook.github.io/react/
+- https://github.com/facebook/flux/tree/master/examples/flux-todomvc/ 
 - http://fancypixel.github.io/blog/2015/01/29/react-plus-flux-backed-by-rails-api-part-2/
