@@ -32,7 +32,7 @@ Example consuming an external API and flowing response payload through to views:
 ## Deployment
 Widgets will have dedicated CI pulling from Github using Jenkins and should be deployable independent from the API/Application (LC) they consume. This will decouple widgets from the App so that they are not bound to LC's release cycle. Jenkins will always pull latest from Github Master and will kick off npm and webpack processes to compile and package our widgets for production. 
 
-![Deploy Diagram](https://github.com/am80l/react-demo-app/blob/master/images/deploy-diagram.png)
+![Deploy Diagram](https://github.com/am80l/react-demo-app/blob/master/images/deploy-diagram2.png)
 
 #### Need to solve
 These were identified as issues we would like to improve on. Below are the issues and their potential solutions if applicable.
