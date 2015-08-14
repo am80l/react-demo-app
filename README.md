@@ -40,6 +40,24 @@ Widgets will have dedicated CI pulling from Github using Jenkins and should be d
 
 React's footprint is not completely negligible. One potential solution to mitigating this file size's impact on the customer experience could be to take advantag of React's isomorphic capability to render a flat component, and lazy load the React library based on interaction (clicked help drawer, put focus on search bar, etc)
 
+### Why React
+#### Isomorphic/universal JS
+Flexibility in how we render components to address things like SEO, performance, etc.
+#### Testing 
+Testability is already solved for since we can easily test React's output without a browser. 
+#### Framework agnostic 
+React does not prescribe how the rest of your application works, only the view. React can be used in any MV* javascript framework. 
+#### Composition
+React uses JSX. Instead of interacting with the dom directly, you're outputting jsx to the virtual dom and letting react handle the changes uses its diffing algorythm. The conveniance of this is you have 1 file for 1 component. No more hopping back and forth between an html template and a js file. Everything is conveniently in one place.
+#### Framework agnostic 
+React does not prescribe how the rest of your application works, only the view. React can be used in any MV* javascript framework. 
+#### Component based design
+React.js gives you the ability to create your own components that you can reuse, combine, and nest as needed. Parent child relationships enforce unidirectional data flow. 
+#### Adoption by major players
+Khan Academy, the new york times, and most recently Netflix have adopted React and are advocating heavily for it.
+- http://techblog.netflix.com/2015/01/netflix-likes-react.html
+- http://stackshare.io/react
+
 ### Alternatives
 React and Flux replace a traditional MVC approach with React representing the view and view-controllers, and Flux handling the models and some controller-like behavior. React and Flux eschew traditional two way data binding in favor of unidirectional data flow. This is the recommended way to use React, however React can be the V in a more traditional MVC with two way data binding as well. 
 
@@ -58,6 +76,9 @@ The flux design isn't dependent on React. We can create our own app dispatcher u
 
 #### No frameworks
 We aren't bound to using a framework. Another alternative is to write our javascript without a framework. We can take advantage of ES6 features using the Babel transpiler and use module patterns or similar to create our widgets.
+
+#### State machine
+All alternatives support a basic FSM javascript implememntation per Boki's recommendation. 
 
 #### Need to solve
 These were identified as issues we would like to improve on. Below are the issues and their potential solutions if applicable.
