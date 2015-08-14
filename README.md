@@ -34,6 +34,31 @@ Widgets will have dedicated CI pulling from Github using Jenkins and should be d
 
 ![Deploy Diagram](https://github.com/am80l/react-demo-app/blob/master/images/deploy-diagram2.png)
 
+### React File size
+- min+gzip 36k
+- min 120k
+
+React's footprint is not completely negligible. One potential solution to mitigating this file size's impact on the customer experience could be to take advantag of React's isomorphic capability to render a flat component, and lazy load the React library based on interaction (clicked help drawer, put focus on search bar, etc)
+
+### Alternatives
+React and Flux replace a traditional MVC approach with React representing the view and view-controllers, and Flux handling the models and some controller-like behavior. React and Flux eschew traditional two way data binding in favor of unidirectional data flow. This is the recommended way to use React, however React can be the V in a more traditional MVC with two way data binding as well. 
+
+#### Backbone + react
+React just needs to be notified when the model changes, there are existing solutions for this.
+- https://github.com/clayallsopp/react.backbone
+
+#### Backbone, underscore, handlebars
+This is the traditional backbone approach. IMO this does not provide enough guard rail for an open contribution model.
+
+#### Backbone with Marionette and handlebars, underscore
+We could implement the Marionette framework on top of backbone to provide some guard rails and extend backbone features and concepts.
+
+#### Flux w/o React
+The flux design isn't dependent on React. We can create our own app dispatcher using the flux base, and build components using a module pattern or similar approach to create component singletons that can talk to eachother via exposed public methods.
+
+#### No frameworks
+We aren't bound to using a framework. Another alternative is to write our javascript without a framework. We can take advantage of ES6 features using the Babel transpiler and use module patterns or similar to create our widgets.
+
 #### Need to solve
 These were identified as issues we would like to improve on. Below are the issues and their potential solutions if applicable.
 - Separate the widget build from LC main application
