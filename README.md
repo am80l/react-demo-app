@@ -48,13 +48,19 @@ Testability is already solved for since we can easily test React's output withou
 #### Framework agnostic 
 React does not prescribe how the rest of your application works, only the view. React can be used in any MV* javascript framework. 
 #### Composition
-React uses JSX. Instead of interacting with the dom directly, you're outputting jsx to the virtual dom and letting react handle the changes uses its diffing algorythm. The conveniance of this is you have 1 file for 1 component. No more hopping back and forth between an html template and a js file. Everything is conveniently in one place.
+React uses JSX. Instead of interacting with the dom directly, you're outputting jsx to the virtual dom and letting react handle the changes uses its diffing algorythm. The conveniance of this is you have 1 file for 1 component. No more hopping back and forth between an html template and a js file. Everything is conveniently in one place. This is usually initially a turn off to developers that are used to seperating concerns. React proponents would tell you that forcing yourself to separate HTML and JS (presentation and logic) is more of a separation of technologies rather than concerns. If you think in a React way, the concerns of the application will be small composeable components. Each of these components does a specific thing, and from this is where the real separation of concerns comes.
 #### Framework agnostic 
 React does not prescribe how the rest of your application works, only the view. React can be used in any MV* javascript framework. 
 #### Component based design
 React.js gives you the ability to create your own components that you can reuse, combine, and nest as needed. Parent child relationships enforce unidirectional data flow. 
+#### Debugging
+There is a chrome extension for React that shows you the virtual dom as if it were the real dom, and is extremeley helpful with debugging.
+#### Debugging
+There is a chrome extension for React that shows you the virtual dom as if it were the real dom, and is extremeley helpful with debugging.
+#### Workflow
+
 #### Adoption by major players
-Khan Academy, the new york times, and most recently Netflix have adopted React and are advocating heavily for it.
+In addition to Facebook, React.js is being used by Khan Academy, the new york times, Atlassian, and most recently Netflix. Adopters tend to become advocates.
 - http://techblog.netflix.com/2015/01/netflix-likes-react.html
 - http://stackshare.io/react
 
