@@ -42,7 +42,7 @@ React's footprint is not completely negligible. One potential solution to mitiga
 
 ### Why React
 #### Isomorphic/universal JS
-Flexibility in how we render components to address things like SEO, performance, etc.
+Flexibility in how we render components to address things like SEO, performance, etc. This allows React to conform to almost any use case.
 #### Testing 
 Testability is already solved for since we can easily test React's output without a browser. 
 #### Framework agnostic 
