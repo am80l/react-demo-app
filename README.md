@@ -60,7 +60,7 @@ In addition to Facebook, React.js is being used by Khan Academy, the new york ti
 - http://stackshare.io/react
 - https://developer.atlassian.com/blog/2015/02/rebuilding-hipchat-with-react/
 
-### Alternatives
+## Alternatives
 React and Flux replace a traditional MVC approach with React representing the view and view-controllers, and Flux handling the models and some controller-like behavior. React and Flux eschew traditional two way data binding in favor of unidirectional data flow. This is the recommended way to use React, however React can be the V in a more traditional MVC with two way data binding as well.
 
 #### Backbone, underscore, handlebars
