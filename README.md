@@ -20,7 +20,7 @@ Vote Panel (parent component)
   - Vote Count (child component)
 
 ## Flux architecture
-Components use the Flux pattern for unidirectional data flow. Data flows from stores down to views. Views can only update stores via actions which pass a payload to store methods via the dispatcher.
+React component use the Flux pattern for unidirectional data flow. Data flows from stores down to views. Views can only update stores via actions which pass a payload to store methods via the dispatcher.
 ![Flux Diagram](https://github.com/am80l/react-demo-app/blob/master/images/flux-diagram.png)
 
 ## Widget architecture
@@ -42,37 +42,33 @@ React's footprint is not completely negligible. One potential solution to mitiga
 
 ### Why React
 #### Isomorphic/universal JS
-Flexibility in how we render components to address things like SEO, performance, etc. This allows React to conform to almost any use case.
-#### Testing 
-Testability is already solved for since we can easily test React's output without a browser. 
-#### Framework agnostic 
-React does not prescribe how the rest of your application works, only the view. React can be used in any MV* javascript framework. 
-#### Composition
-React uses JSX. Instead of interacting with the dom directly, you're outputting jsx to the virtual dom and letting react handle the changes uses its diffing algorythm. The conveniance of this is you have 1 file for 1 component. No more hopping back and forth between an html template and a js file. Everything is conveniently in one place. This is usually initially a turn off to developers that are used to seperating concerns. React proponents would tell you that forcing yourself to separate HTML and JS (presentation and logic) is more of a separation of technologies rather than concerns. If you think in a React way, the concerns of the application will be small composeable components. Each of these components does a specific thing, and from this is where the real separation of concerns comes.
-#### Framework agnostic 
-React does not prescribe how the rest of your application works, only the view. React can be used in any MV* javascript framework. 
+Flexibility in how we render components to address things like SEO, performance, etc. This allows React to conform and optimize almost any use case.
+#### Testing
+Testability is simplified since we can easily test React's output without a browser like phantom.js.
+#### Framework agnostic
+React does not prescribe how the rest of your application works, only the view. React can be used in any MV* javascript framework.
+#### Composition / Workflow
+React uses JSX. Instead of interacting with the dom directly, React outputs virtual dom via jsx and React handles the changes via its diffing algorythm. The conveniance of this is you have 1 file for 1 component. Everything is conveniently in one place which simplifies both composition and testing.
 #### Component based design
-React.js gives you the ability to create your own components that you can reuse, combine, and nest as needed. Parent child relationships enforce unidirectional data flow. 
+React.js is component best which allows for reusing, combing, and nesting as needed. Parent child relationships pass state from parents down to children.
 #### Debugging
 There is a chrome extension for React that shows you the virtual dom as if it were the real dom, and is extremeley helpful with debugging.
-#### Debugging
-There is a chrome extension for React that shows you the virtual dom as if it were the real dom, and is extremeley helpful with debugging.
-#### Workflow
 
 #### Adoption by major players
-In addition to Facebook, React.js is being used by Khan Academy, the new york times, Atlassian, and most recently Netflix. Adopters tend to become advocates.
+In addition to Facebook, React.js is being used by Khan Academy, the new york times, Atlassian, Instagram and most recently Netflix. Adopters tend to become advocates.
 - http://techblog.netflix.com/2015/01/netflix-likes-react.html
 - http://stackshare.io/react
+- https://developer.atlassian.com/blog/2015/02/rebuilding-hipchat-with-react/
 
 ### Alternatives
-React and Flux replace a traditional MVC approach with React representing the view and view-controllers, and Flux handling the models and some controller-like behavior. React and Flux eschew traditional two way data binding in favor of unidirectional data flow. This is the recommended way to use React, however React can be the V in a more traditional MVC with two way data binding as well. 
+React and Flux replace a traditional MVC approach with React representing the view and view-controllers, and Flux handling the models and some controller-like behavior. React and Flux eschew traditional two way data binding in favor of unidirectional data flow. This is the recommended way to use React, however React can be the V in a more traditional MVC with two way data binding as well.
+
+#### Backbone, underscore, handlebars
+This is the traditional backbone approach. IMO this does not provide enough guard rail for an open contribution model.
 
 #### Backbone + react
 React just needs to be notified when the model changes, there are existing solutions for this.
 - https://github.com/clayallsopp/react.backbone
-
-#### Backbone, underscore, handlebars
-This is the traditional backbone approach. IMO this does not provide enough guard rail for an open contribution model.
 
 #### Backbone with Marionette and handlebars, underscore
 We could implement the Marionette framework on top of backbone to provide some guard rails and extend backbone features and concepts.
@@ -84,12 +80,12 @@ The flux design isn't dependent on React. We can create our own app dispatcher u
 We aren't bound to using a framework. Another alternative is to write our javascript without a framework. We can take advantage of ES6 features using the Babel transpiler and use module patterns or similar to create our widgets.
 
 #### State machine
-All alternatives support a basic FSM javascript implememntation per Boki's recommendation. 
+All alternatives support a basic FSM javascript implememntation per Boki's recommendation.
 
 #### Need to solve
 These were identified as issues we would like to improve on. Below are the issues and their potential solutions if applicable.
 - Separate the widget build from LC main application
-  * Via independent build strategy *see deploy diagram. POC Nolan P
+  * Via independent build strategy *see deploy diagram. POC Nolan
 - Documentation
   * JSdoc, coverage reporting, release notes
   * TODO env for docs and release notes, pref automatable push
@@ -102,7 +98,7 @@ These were identified as issues we would like to improve on. Below are the issue
 - Better development with watch (only build new files)
   * Solved with web pack watch, and optionally w/ hot reload
 - Minified AND compressed production files
-  * Cloudfront
+  * Akamai
   * TODO, parallel
 - API v2 of LC
   * TODO part of execution
