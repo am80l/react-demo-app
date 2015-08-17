@@ -82,7 +82,7 @@ We aren't bound to using a framework. Another alternative is to write our javasc
 #### State machine
 All alternatives support a basic FSM javascript implememntation per Boki's recommendation.
 
-#### Need to solve
+## Need to solve
 These were identified as issues we would like to improve on. Below are the issues and their potential solutions if applicable.
 - Separate the widget build from LC main application
   * Via independent build strategy *see deploy diagram. POC Nolan
