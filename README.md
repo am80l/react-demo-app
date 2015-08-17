@@ -32,7 +32,7 @@ Example consuming an external API and flowing response payload through to views:
 ## Deployment
 Widgets will have dedicated CI pulling from Github using Jenkins and should be deployable independent from the API/Application (LC) they consume Jenkins will will also kick off npm, karma and webpack to install dependencies, run unit tests using phantom.js, and compile and package the widget for production.
 
-![Deploy Diagram](https://github.com/am80l/react-demo-app/blob/master/images/deploy-diagram2.png)
+![Deploy Diagram](https://github.com/am80l/react-demo-app/blob/master/images/deploy-diagram.png)
 
 ### React File size
 - min+gzip 36k
