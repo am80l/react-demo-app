@@ -15,9 +15,9 @@ var VoteButtons = React.createClass({
   render: function(){
 
     return (
-      <div id="vote">
-        <button id="upVote" className="button" onClick={this.upVote}>Upvote</button>
-        <button id="downVote" className="button" onClick={this.downVote}>Downvote</button>
+      <div id="vote" className="btn-group btn-group-lg">
+        <button id="upVote" className="btn btn-default" onClick={this.upVote}>Upvote</button>
+        <button id="downVote" className="btn btn-default" onClick={this.downVote}>Downvote</button>
       </div>
 
     );

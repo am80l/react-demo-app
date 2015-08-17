@@ -28,7 +28,7 @@ var VotePanel = React.createClass({
 
   render: function(){
     return (
-      <div className="container">
+      <div id="vote_container">
         <VoteButtons />
         <VoteCount count={this.state.count}  />
       </div>

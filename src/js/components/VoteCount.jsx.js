@@ -7,7 +7,7 @@ var VoteCount = React.createClass({
 
     return (
       <div id="vote_count_container">
-        {this.props.count}
+        <h1><span className="label label-default">{this.props.count}</span></h1>
       </div>
     );
 

@@ -5,7 +5,7 @@ This is a sandbox for React components built with Flux.
 Required global packages:
 `npm i webpack -g;`
 `npm i webpack-dev-server -g;`
-  
+
 Install local packages at cloned root:
 `npm i`
 
@@ -20,7 +20,7 @@ Vote Panel (parent component)
   - Vote Count (child component)
 
 ## Flux architecture
-Components use the Flux pattern for unidirectional data flow. Data flows from stores down to views. Views can only update stores via actions which pass a payload to store methods via the dispatcher. 
+Components use the Flux pattern for unidirectional data flow. Data flows from stores down to views. Views can only update stores via actions which pass a payload to store methods via the dispatcher.
 ![Flux Diagram](https://github.com/am80l/react-demo-app/blob/master/images/flux-diagram.png)
 
 ## Widget architecture
@@ -30,7 +30,7 @@ Example consuming an external API and flowing response payload through to views:
 ![Flux Diagram](https://github.com/am80l/react-demo-app/blob/master/images/widget-diagram.png)
 
 ## Deployment
-Widgets will have dedicated CI pulling from Github using Jenkins and should be deployable independent from the API/Application (LC) they consume Jenkins will will also kick off npm, karma and webpack to install dependencies, run unit tests using phantom.js, and compile and package the widget for production. 
+Widgets will have dedicated CI pulling from Github using Jenkins and should be deployable independent from the API/Application (LC) they consume Jenkins will will also kick off npm, karma and webpack to install dependencies, run unit tests using phantom.js, and compile and package the widget for production.
 
 ![Deploy Diagram](https://github.com/am80l/react-demo-app/blob/master/images/deploy-diagram2.png)
 
@@ -89,23 +89,21 @@ All alternatives support a basic FSM javascript implememntation per Boki's recom
 #### Need to solve
 These were identified as issues we would like to improve on. Below are the issues and their potential solutions if applicable.
 - Separate the widget build from LC main application
-  * Via independent build strategy. Requires a dedicated build / deploy cycle. More info: Nolan P
+  * Via independent build strategy *see deploy diagram. POC Nolan P
 - Documentation
   * JSdoc, coverage reporting, release notes
-  * TODO env for docs and release notes, automatable 
+  * TODO env for docs and release notes, pref automatable push
 - Localization
   * Via Yahoo react-intl using format.js http://formatjs.io/react/
 - SDK distribution design/Multiple widgets strategy
   * Solved by React’s component based design. Components talk to each other via stores built on Flux architecture
 - Class naming conventions
-  * Solved in React via js interpolation. Solved in LESS/SASS with &- naming convention https://github.intuit.com/TTcom/product-compare-chart/blob/master/src/less/pcc.less
+  * Solved in React via js interpolation/prefixing. Solved in LESS/SASS with &- naming convention https://github.intuit.com/TTcom/product-compare-chart/blob/master/src/less/pcc.less
 - Better development with watch (only build new files)
   * Solved with web pack watch, and optionally w/ hot reload
 - Minified AND compressed production files
-  * AWS limitation  
+  * Cloudfront
   * TODO, parallel
-- ReactJS
-  * Yes
 - API v2 of LC
   * TODO part of execution
 - Implementation design
@@ -130,5 +128,5 @@ These were identified as issues we would like to improve on. Below are the issue
 ## Resources
 - https://facebook.github.io/flux/docs/overview.html#content
 - http://facebook.github.io/react/
-- https://github.com/facebook/flux/tree/master/examples/flux-todomvc/ 
+- https://github.com/facebook/flux/tree/master/examples/flux-todomvc/
 - http://fancypixel.github.io/blog/2015/01/29/react-plus-flux-backed-by-rails-api-part-2/
