@@ -27,7 +27,7 @@ React component use the Flux pattern for unidirectional data flow. Data flows fr
 Actions triggered in the views fetch new data via AJAX and flow the response payload through the dispatcher to the store. New data flows from the store down to the React component and state changes trigger the components render method. Each store is responsible for a domain of the application, and only update themselves in response to actions.
 
 Example consuming an external API and flowing response payload through to views:
-![Flux Diagram](https://github.com/am80l/react-demo-app/blob/master/images/widget-diagram.png)
+![Flux Diagram](https://github.com/am80l/react-demo-app/blob/master/images/widget-diagram2.png)
 
 ## Deployment
 Widgets will have dedicated CI pulling from Github using Jenkins and should be deployable independent from the API/Application (LC) they consume. Jenkins will will also kick off npm, karma and webpack to install dependencies, run unit tests using phantom.js, and compile and package the widget for production.
