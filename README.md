@@ -113,11 +113,11 @@ These were identified as issues we would like to improve on. Below are the issue
 - sdk-versioned
   * TBD, parallel
 - Semantic versioning
-  * github tags or via gulp-bump, gulp release, etc
+  * github tags or via gulp-bump, or via cdn
 - Monitoring for SDK endpoint uptime
   * TBD, parallel
 - Unit testing
-  * Karma w/mocha and chai. TBD whats so great about jest?
+  * Karma w/mocha and chai. TBD advantages of jest?
 - Regression testing
   * Unit testing + QE automation TBD
 
