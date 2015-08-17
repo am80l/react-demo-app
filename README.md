@@ -120,6 +120,10 @@ These were identified as issues we would like to improve on. Below are the issue
   * Karma w/mocha and chai. TBD advantages of jest?
 - Regression testing
   * Unit testing + QE automation TBD
+  
+## Next Steps
+- Write cards/stories for hello world example to implement a deployment process
+- Work with QE to establish testing strategy (envs, process, etc)
 
 ## Resources
 - https://facebook.github.io/flux/docs/overview.html#content
